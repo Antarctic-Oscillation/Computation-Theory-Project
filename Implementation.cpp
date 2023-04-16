@@ -27,7 +27,7 @@ int main() {
                 MachineAccepting("(a|b)*b(a|b)(a|b)(a|b)");
                 break;
             case 2:
-                MachineAccepting("(b*|((aaa)(a)*)*)*");
+                MachineAccepting("(b|((aaa)(a)*))*");
                 break;
             default:
                 valid = false;
