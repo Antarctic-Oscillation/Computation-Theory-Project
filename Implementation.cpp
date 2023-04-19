@@ -1,9 +1,10 @@
 #include <iostream>
 #include <regex>
 
-#define FAST                               \
-    std::ios_base::sync_with_stdio(false); \
-    std::cin.tie(NULL)
+inline void FastIO() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+}
 
 void MachineAccepting(std::string str);
 
@@ -11,9 +12,9 @@ unsigned short choice;
 bool valid = true;
 
 int main() {
-    FAST;
+    FastIO();
 
-    while(valid) {
+    while (valid) {
         std::cout << "-----------------------------------------\n";
         std::cout << "Enter your preferred choice to match.\n";
         std::cout << "-----------------------------------------\n";
@@ -39,10 +40,10 @@ int main() {
 }
 
 void MachineAccepting(std::string str) {
-    std::cout << "========================== ("<< choice <<") ===========================\n";
-    std::cout << "Enter your patterns. type 'return' to return to menue." << std::endl;
+    std::cout << "========================== (" << choice << ") ===========================\n";
+    std::cout << "Enter your patterns. type 'return' to return to menu." << std::endl;
     std::string input;
-    
+
     while (true) {
         std::cin >> input;
         if (input == "return") break;
